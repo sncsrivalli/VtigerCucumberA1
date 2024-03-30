@@ -222,7 +222,7 @@ public class WebDriverUtility {
 	 * @param className
 	 * @return 
 	 */
-	public String captureScreenshot(WebDriver driver, JavaUtility jutil, String className) {
+	public File captureScreenshot(WebDriver driver, JavaUtility jutil, String className) {
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		File dest = new File("./Screenshot/"
@@ -233,7 +233,7 @@ public class WebDriverUtility {
 			e.printStackTrace();
 		}
 		
-		return dest.getAbsolutePath();
+		return dest;
 	}
 	
 	/**

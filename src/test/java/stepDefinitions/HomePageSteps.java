@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+import org.testng.Assert;
+
 import genericLibraries.TestContextSetUp;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -16,6 +18,7 @@ public class HomePageSteps {
 	@When("User navigates to leads page")
 	public void user_navigates_to_leads_page() { 
 		home = testContext.pageObjects.getHome();
+		Assert.assertTrue(home.getPageHeader().contains("Home"));
 		home.clickLeads();
 	}
 	
