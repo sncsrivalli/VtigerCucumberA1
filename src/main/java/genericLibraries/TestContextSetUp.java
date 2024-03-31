@@ -19,6 +19,7 @@ public class TestContextSetUp {
 	public String leadName;
 	public Map<String, String> map;
 	public String duplicateLeadName;
+	public String contactName;
 	
 	public TestContextSetUp() {
 		property = new PropertiesUtility();

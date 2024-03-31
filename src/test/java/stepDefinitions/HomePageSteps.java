@@ -27,4 +27,9 @@ public class HomePageSteps {
 	    home.signOutOfApp(testContext.web);
 	}
 
+	@When("User navigates to contacts page")
+	public void user_navigates_to_contacts_page() {
+		home = testContext.pageObjects.getHome();
+	    home.clickContacts();
+	}
 }

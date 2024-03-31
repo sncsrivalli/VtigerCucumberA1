@@ -17,13 +17,13 @@ public class LoginPageSteps {
 
 	@Given("User navigates to Vtiger CRM")
 	public void user_navigates_to_vtiger_crm() {
+		login = testContext.pageObjects.getLogin();
 		testContext.web.navigateToApp(testContext.property.readFromProperties("url"));
 		Assert.assertEquals(login.getPageHeader(), "vtiger");
 	}
 
 	@And("User logs in into vtiger")
 	public void user_logs_in_into_vtiger() {
-		login = testContext.pageObjects.getLogin();
 		login.loginToVtiger(testContext.property.readFromProperties("username"),
 				testContext.property.readFromProperties("password"));
 	}

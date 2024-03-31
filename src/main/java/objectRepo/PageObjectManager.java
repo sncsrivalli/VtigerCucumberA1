@@ -10,6 +10,10 @@ public class PageObjectManager {
 	public LeadsPage leads;
 	public DuplicatingLeadPage duplicateLead;
 	public NewLeadDetailsPage newLead;
+	public ContactsPage contacts;
+	public CreateNewContactPage createContact;
+	public NewContactDetailsPage newContact;
+	
 	public WebDriver driver;
 	
 	public PageObjectManager(WebDriver driver) {
@@ -45,4 +49,21 @@ public class PageObjectManager {
 		newLead = new NewLeadDetailsPage(driver);
 		return newLead;
 	}
+	
+
+	public ContactsPage getContacts() {
+		contacts = new ContactsPage(driver);
+		return contacts;
+	}
+
+	public CreateNewContactPage getCreateContact() {
+		createContact = new CreateNewContactPage(driver);
+		return createContact;
+	}
+
+	public NewContactDetailsPage getNewContact() {
+		newContact = new NewContactDetailsPage(driver);
+		return newContact;
+	}
+
 }
