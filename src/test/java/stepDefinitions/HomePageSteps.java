@@ -30,6 +30,7 @@ public class HomePageSteps {
 	@When("User navigates to contacts page")
 	public void user_navigates_to_contacts_page() {
 		home = testContext.pageObjects.getHome();
+		Assert.assertTrue(home.getPageHeader().contains("Home"));
 	    home.clickContacts();
 	}
 }
