@@ -1,0 +1,129 @@
+[
+	{
+		"line": 2,
+		"elements": [
+			{
+				"line": 4,
+				"name": "",
+				"description": "",
+				"type": "background",
+				"keyword": "Background",
+				"steps": [
+					{
+						"result": {
+							"duration": 3498415300,
+							"status": "passed"
+						},
+						"line": 5,
+						"name": "I navigate to flipkart",
+						"match": {
+							"location": "flipkartSteps.BackGroundSteps.i_navigate_to_flipkart()"
+						},
+						"keyword": "Given "
+					}
+				]
+			},
+			{
+				"start_timestamp": "2024-12-27T10:33:36.044Z",
+				"before": [
+					{
+						"result": {
+							"duration": 4368301200,
+							"status": "passed"
+						},
+						"match": {
+							"location": "flipkartSteps.Hooks.beforeScenario()"
+						}
+					}
+				],
+				"line": 7,
+				"name": "Verify user can add an item to cart",
+				"description": "",
+				"id": "add-to-cart;verify-user-can-add-an-item-to-cart",
+				"after": [
+					{
+						"result": {
+							"duration": 980205900,
+							"status": "passed"
+						},
+						"match": {
+							"location": "flipkartSteps.Hooks.afterScenario()"
+						}
+					}
+				],
+				"type": "scenario",
+				"keyword": "Scenario",
+				"steps": [
+					{
+						"result": {
+							"duration": 4022206300,
+							"status": "passed"
+						},
+						"line": 8,
+						"name": "I search for mobiles",
+						"match": {
+							"location": "flipkartSteps.WelcomePageSteps.i_search_for_mobiles()"
+						},
+						"keyword": "When "
+					},
+					{
+						"result": {
+							"duration": 502522000,
+							"status": "passed"
+						},
+						"line": 9,
+						"name": "I click on a mobile",
+						"match": {
+							"location": "flipkartSteps.MobilesPageSteps.i_click_on_a_mobile()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 4688088400,
+							"status": "passed"
+						},
+						"line": 10,
+						"name": "I click on cart symbol",
+						"match": {
+							"location": "flipkartSteps.FirstMobilePageSteps.i_click_on_cart_symbol()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 43830000,
+							"status": "passed"
+						},
+						"line": 11,
+						"name": "Mobile should be added to cart",
+						"match": {
+							"location": "flipkartSteps.CartPageSteps.mobile_should_be_added_to_cart()"
+						},
+						"keyword": "Then "
+					}
+				],
+				"tags": [
+					{
+						"name": "@flipkart"
+					}
+				]
+			}
+		],
+		"name": "Add To Cart",
+		"description": "",
+		"id": "add-to-cart",
+		"keyword": "Feature",
+		"uri": "file:src/test/resources/featureFiles/FlipKart.feature",
+		"tags": [
+			{
+				"name": "@flipkart",
+				"type": "Tag",
+				"location": {
+					"line": 1,
+					"column": 1
+				}
+			}
+		]
+	}
+]
